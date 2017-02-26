@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="worldMap">
 <head>
     <meta charset="utf-8">
     <title>Clever maps</title>    
     <!--Custom javacsript -->
     <!--Custom CSS-->
-    <link rel="stylesheet" href="../components/styles/clever-mapp.css"/>    
+    <link rel="stylesheet" href="../components/styles/clever-mapp.css"/>  
+    <link rel=stylesheet href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
 </head>
 <body>
+    
+        <div class="container">
+            <div ng-controller="homeController">
+            
+                {{ city }}
+                
+            </div>            
+        </div>
+    
     <!-- Third party JS -->
     <script src="../node_modules/angular/angular.js"></script>
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
     
     <!-- Main app module -->
-    <script src="app/app.module.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
 </body>
 </html>
