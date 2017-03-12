@@ -15,16 +15,19 @@ gulp.task('default', function() {
 gulp.task('scripts', function() {
    return gulp.src([
        './app/app.js',
-       './app/controllers.js'
+       './app/controllers.js',
+       './app/directives.js',
+       './app/routes.js',
+       './app/services.js'
         ])
         .pipe(concat('script.js'))
-        .pipe(gulp.dest('./app/dest/'));
+        .pipe(gulp.dest('./dest/'));
 });
 
 gulp.task('styles', function() {   
     return gulp.src('./components/styles/clever-map.css')
         .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
-        .pipe(gulp.dest('./app/dest/')); 
+        .pipe(gulp.dest('./dest/')); 
 });
 
 gulp.task('watch', function() {

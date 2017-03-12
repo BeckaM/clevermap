@@ -1,1 +1,23 @@
 @import "normalize.css";
+
+/* Global styles */
+body { 
+    padding-top: 70px;    
+}
+
+.map {
+    height: 600px;
+    width: 70%;
+    float: right;
+}
+
+.map-container {
+    padding-top: 50px;
+}
+.franceisbacon {
+    display: none;
+}
+
+.footer {
+    height: 200px;
+}

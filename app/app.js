@@ -1,5 +1,8 @@
 // MODULES
   
 var worldMap = angular.module('worldMap', [
-    // Angular modules
+    // Angular modules    
+    'ngRoute',
+    'ngResource'
+    
 ]);
